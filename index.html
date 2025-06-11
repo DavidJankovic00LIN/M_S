@@ -31,180 +31,290 @@
   </div>
   <div class="flex-none">
     <ul class="menu menu-horizontal px-1">
-      <li><a>Link</a></li>
-      <li>
-        <details>
-          <summary>Parent</summary>
-          <ul class="bg-base-100 rounded-t-none p-2">
-            <li><a>Link 1</a></li>
-            <li><a>Link 2</a></li>
-          </ul>
-        </details>
-      </li>
+      <li><a>O nama</a></li>
+      <li><a>Proizvodi</a></li>
+      <li><a>Uslužna proizvodnja</a></li>
+      <li><a>Kontakt</a></li>
     </ul>
   </div>
 </div>
 <!--HERO------------------------------------------------------------------------------------------------------------->
 <div
   class="hero min-h-screen"
-  style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);"
+  style="background-image: url(assets/Egipat\ 2012\ BABY\ FIT\ photo.jpg); background-color:  rgba(0,0,0,0.9);"
 >
   <div class="hero-overlay"></div>
   <div class="hero-content text-neutral-content text-center">
     <div class="max-w-md">
-      <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+      <h1 class="mb-5 text-5xl font-bold">Sloga ili logo ovde</h1>
       <p class="mb-5">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
+       Mozda ovde neki sloga,zavisi sta oslucimo gore
       </p>
-      <button class="btn btn-primary">Get Started</button>
+      <button class="btn btn-primary">Dugme koje ce da skroluje na sekciju ispod</button>
+    </div>
+  </div>
+</div>
+<!--O nama ---------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+<div class="grid grid-cols-12 gap-8 py-20 px-4 bg-white">
+    <div class="col-span-5 col-start-2">
+        <p class="text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, deleniti quo perferendis rem tenetur praesentium. Voluptatum, officiis enim eos animi, quod blanditiis quas nam veritatis quasi nemo placeat ut? Earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dicta in dolor error dignissimos cupiditate voluptas natus voluptatem maxime explicabo rem repellat eveniet cumque, ducimus eos non assumenda dolorem laudantium!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea voluptatum perferendis? Architecto, est. Nostrum quod, nemo sunt atque qui aut repellendus excepturi blanditiis laborum rem eos molestias ducimus ad.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, aut! Ad, laborum sed ducimus sint voluptas tempore nihil dolore vitae aut, cumque est neque distinctio eveniet ea, dignissimos sit omnis!
+
+        </p>
+    </div>
+    <div class="col-span-5">
+        <img src="assets/Katalog - fotografije 001.jpg" class="w-full h-auto object-cover shadow-xl">
+    </div>
+</div>
+
+<!--PROIZVODI-------------------------------------------------------------------------------------------------------->
+<div id="Proizvodi" class="bg-white">
+  <h1 class="mb-5 text-3xl md:text-5xl font-bold text-center text-gray-900 bg-white py-8">Sloga ili logo ovde</h1>
+
+  <div class="grid bg-white grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4 md:p-8 lg:p-16">
+    
+    <!-- Kartica 1 -->
+    <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-100 rounded-lg overflow-hidden">
+      <figure class="relative pt-[100%] overflow-hidden">
+        <img src="assets/Baby Fit 72pcs Blue.jpg" alt="Proizvod 1" class="absolute top-0 left-0 w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+      </figure>
+      <div class="card-body p-4">
+        <h2 class="card-title text-lg font-semibold">Proizvod 1</h2>
+        <p class="text-gray-600 mb-4">Kratak opis proizvoda</p>
+        <div class="card-actions justify-between items-center">
+          <span class="font-bold text-primary">99,99 RSD</span>
+          <button class="btn btn-primary btn-sm md:btn-md" onclick="modal_1.showModal()">Detalji</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kartica 2 -->
+    <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-100 rounded-lg overflow-hidden">
+      <figure class="relative pt-[100%] overflow-hidden">
+        <img src="assets/Baby Fit 72pcs Blue.jpg" alt="Proizvod 2" class="absolute top-0 left-0 w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+      </figure>
+      <div class="card-body p-4">
+        <h2 class="card-title text-lg font-semibold">Proizvod 2</h2>
+        <p class="text-gray-600 mb-4">Kratak opis proizvoda</p>
+        <div class="card-actions justify-between items-center">
+          <span class="font-bold text-primary">99,99 RSD</span>
+          <button class="btn btn-primary btn-sm md:btn-md" onclick="modal_2.showModal()">Detalji</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kartica 3 -->
+    <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-100 rounded-lg overflow-hidden">
+      <figure class="relative pt-[100%] overflow-hidden">
+        <img src="assets/Baby Fit 72pcs Blue.jpg" alt="Proizvod 3" class="absolute top-0 left-0 w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+      </figure>
+      <div class="card-body p-4">
+        <h2 class="card-title text-lg font-semibold">Proizvod 3</h2>
+        <p class="text-gray-600 mb-4">Kratak opis proizvoda</p>
+        <div class="card-actions justify-between items-center">
+          <span class="font-bold text-primary">99,99 RSD</span>
+          <button class="btn btn-primary btn-sm md:btn-md" onclick="modal_3.showModal()">Detalji</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kartica 4 -->
+    <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-100 rounded-lg overflow-hidden">
+      <figure class="relative pt-[100%] overflow-hidden">
+        <img src="assets/Baby Fit 72pcs Blue.jpg" alt="Proizvod 4" class="absolute top-0 left-0 w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+      </figure>
+      <div class="card-body p-4">
+        <h2 class="card-title text-lg font-semibold">Proizvod 4</h2>
+        <p class="text-gray-600 mb-4">Kratak opis proizvoda</p>
+        <div class="card-actions justify-between items-center">
+          <span class="font-bold text-primary">99,99 RSD</span>
+          <button class="btn btn-primary btn-sm md:btn-md" onclick="modal_4.showModal()">Detalji</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<!--PROIZVODI-------------------------------------------------------------------------------------------------------->
-
-<div class="grid bg-white grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4 md:p-8 lg:p-16">
+<!-- Modali za svaku karticu -->
+<dialog id="modal_1" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box max-w-4xl w-full mx-2 sm:mx-0">
+    <!-- Header with title and close button -->
+    <div class="flex justify-between items-start mb-4">
+      <h3 class="font-bold text-lg"></h3>
+      <form method="dialog">
+        <button class="btn btn-circle btn-sm">✕</button>
+      </form>
+    </div>
     
-    <!-- Kartica 1 -->
-    <div class="card bg-base-100 shadow-xl border-solid">
-        <figure>
-            <img src="assets/Baby Fit 72pcs Blue.jpg" alt="Proizvod 1" class="w-full h-auto" />
-        </figure>
-        <div class="card-body">
-            <h2 class="card-title">Proizvod 1</h2>
-            <p>Procitaj vise</p>
-            <div class="card-actions justify-end">
-                <button class="btn btn-primary" onclick="modal_1.showModal()">Otvori</button>
-            </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="relative pt-[100%] rounded-lg overflow-hidden">
+        <img src="assets/Baby Fit 72pcs Blue.jpg" alt="Proizvod 1" class="absolute top-0 left-0 w-full h-full object-cover">
+      </div>
+      <div>
+        <div class="flex flex-col gap-4">
+          <h3 class="font-bold text-lg text-white-900">Proizvod 1 - Detalji</h3>
+          <div class="divider my-0"></div>
+          
+          <p class="text-white-700">Detaljan opis proizvoda sa svim karakteristikama i specifikacijama koje bi korisnik želeo da zna pre kupovine.</p>
         </div>
+      </div>
     </div>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>zatvori</button>
+  </form>
+</dialog>
 
-    <!-- Kartica 2 -->
-    <div class="card bg-base-100 shadow-xxl">
-        <figure>
-            <img src="assets/Baby Fit 72pcs Blue.jpg" alt="Proizvod 2" class="w-full h-auto" />
-        </figure>
-        <div class="card-body">
-            <h2 class="card-title">Proizvod 2</h2>
-            <p>Procitaj vise</p>
-            <div class="card-actions justify-end">
-                <button class="btn btn-primary" onclick="modal_2.showModal()">Otvori</button>
-            </div>
-        </div>
+<dialog id="modal_2" class="modal modal-bottom sm:modal-middle">
+ 
+  <div class="modal-box max-w-4xl w-full mx-2 sm:mx-0">
+    <!-- Header with title and close button -->
+    <div class="flex justify-between items-start mb-4">
+      <h3 class="font-bold text-lg"></h3>
+      <form method="dialog">
+        <button class="btn btn-circle btn-sm">✕</button>
+      </form>
     </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="relative pt-[100%] rounded-lg overflow-hidden">
+        <img src="assets/Baby Fit 72pcs Blue.jpg" alt="Proizvod 1" class="absolute top-0 left-0 w-full h-full object-cover">
+      </div>
+      <div>
+        <div class="flex flex-col gap-4">
+          <h3 class="font-bold text-lg text-white-900">Proizvod 1 - Detalji</h3>
+          <div class="divider my-0"></div>
+          
+          <p class="text-white-700">Detaljan opis proizvoda sa svim karakteristikama i specifikacijama koje bi korisnik želeo da zna pre kupovine.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>zatvori</button>
+  </form>
+</dialog>
 
-    <!-- Kartica 3 -->
-    <div class="card bg-base-100 shadow-xxl">
-        <figure>
-            <img src="assets/Baby Fit 72pcs Blue.jpg" alt="Proizvod 3" class="w-full h-auto" />
-        </figure>
-        <div class="card-body">
-            <h2 class="card-title">Proizvod 3</h2>
-            <p>Procitaj vise</p>
-            <div class="card-actions justify-end">
-                <button class="btn btn-primary" onclick="modal_3.showModal()">Otvori</button>
-            </div>
-        </div>
-    </div>
 
-    <!-- Kartica 4 -->
-    <div class="card bg-base-100 shadow-xxl">
-        <figure>
-            <img src="assets/Baby Fit 72pcs Blue.jpg" alt="Proizvod 4" class="w-full h-auto" />
-        </figure>
-        <div class="card-body">
-            <h2 class="card-title">Proizvod 4</h2>
-            <p>Procitaj vise</p>
-            <div class="card-actions justify-end">
-                <button class="btn btn-primary" onclick="modal_4.showModal()">Otvori</button>
-            </div>
-        </div>
+<dialog id="modal_3" class="modal modal-bottom sm:modal-middle">
+
+  <div class="modal-box max-w-4xl w-full mx-2 sm:mx-0">
+    <!-- Header with title and close button -->
+    <div class="flex justify-between items-start mb-4">
+      <h3 class="font-bold text-lg"></h3>
+      <form method="dialog">
+        <button class="btn btn-circle btn-sm">✕</button>
+      </form>
     </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="relative pt-[100%] rounded-lg overflow-hidden">
+        <img src="assets/Baby Fit 72pcs Blue.jpg" alt="Proizvod 1" class="absolute top-0 left-0 w-full h-full object-cover">
+      </div>
+      <div>
+        <div class="flex flex-col gap-4">
+          <h3 class="font-bold text-lg text-white-900">Proizvod 1 - Detalji</h3>
+          <div class="divider my-0"></div>
+          
+          <p class="text-white-700">Detaljan opis proizvoda sa svim karakteristikama i specifikacijama koje bi korisnik želeo da zna pre kupovine.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>zatvori</button>
+  </form>
+
+</dialog>
+
+<dialog id="modal_4" class="modal modal-bottom sm:modal-middle">
+
+  <div class="modal-box max-w-4xl w-full mx-2 sm:mx-0">
+    <!-- Header with title and close button -->
+    <div class="flex justify-between items-start mb-4">
+      <h3 class="font-bold text-lg"></h3>
+      <form method="dialog">
+        <button class="btn btn-circle btn-sm">✕</button>
+      </form>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="relative pt-[100%] rounded-lg overflow-hidden">
+        <img src="assets/Baby Fit 72pcs Blue.jpg" alt="Proizvod 1" class="absolute top-0 left-0 w-full h-full object-cover">
+      </div>
+      <div>
+        <div class="flex flex-col gap-4">
+          <h3 class="font-bold text-lg text-white-900">Proizvod 1 - Detalji</h3>
+          <div class="divider my-0"></div>
+          
+          <p class="text-white-700">Detaljan opis proizvoda sa svim karakteristikama i specifikacijama koje bi korisnik želeo da zna pre kupovine.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>zatvori</button>
+  </form>
+
+</dialog>
+
+<div class="carousel carousel-center bg-white " id="infinite-carousel">
+  <div class="carousel-item ">
+    <img src="assets/Baby Fit 72pcs Blue.jpg"  class="h-64" alt="Pizza" />
+  </div>
+  <div class="carousel-item">
+    <img src="assets/Baby Fit 72pcs Pink.jpg" class="h-64" alt="Pizza" />
+  </div>
+  <div class="carousel-item">
+    <img src="assets/Baby Fit Green 15 kom.jpg" class="h-64" alt="Pizza" />
+  </div>
+  <div class="carousel-item">
+    <img src="assets/Baby Fit White 64pcs.jpg"  class="h-64" alt="Pizza" />
+  </div>
+  <div class="carousel-item">
+    <img src="assets/Make up fit Ljubicasta.jpg" class="h-64" alt="Pizza" />
+  </div>
+  <div class="carousel-item">
+    <img src="assets/Perfecto drvo crvena 1.jpg" class="h-64" alt="Pizza" />
+  </div>
+  <div class="carousel-item">
+    <img src="assets/Perfecto univerzal.jpg" class="h-64" alt="Pizza" />
+  </div>
 </div>
-
-<!-- Modali (ostaju isti kao prethodno) -->
-<dialog id="modal_1" class="modal">
-    <div class="modal-box max-w-2xl">
-        <h3 class="font-bold text-lg">Proizvod 1</h3>
-        <p class="py-4">
-            Detaljan opis proizvoda 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </p>
-        <div class="modal-action">
-            <form method="dialog">
-                <button class="btn">Zatvori</button>
-            </form>
-        </div>
-    </div>
-</dialog>
-
-<!-- Dodati modal_2, modal_3 i modal_4 na isti način -->
-<!-- Modali -->
-<dialog id="modal_1" class="modal">
-    <div class="modal-box max-w-2xl">
-        <h3 class="font-bold text-lg">Proizvod 1</h3>
-        <p class="py-4">
-            Detaljan opis proizvoda 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </p>
-        <div class="modal-action">
-            <form method="dialog">
-                <button class="btn">Zatvori</button>
-            </form>
-        </div>
-    </div>
-</dialog>
-
-<dialog id="modal_2" class="modal">
-    <div class="modal-box max-w-2xl">
-        <h3 class="font-bold text-lg">Proizvod 2</h3>
-        <p class="py-4">
-            Detaljan opis proizvoda 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </p>
-        <div class="modal-action">
-            <form method="dialog">
-                <button class="btn">Zatvori</button>
-            </form>
-        </div>
-    </div>
-</dialog>
-
-<dialog id="modal_3" class="modal">
-    <div class="modal-box max-w-2xl">
-        <h3 class="font-bold text-lg">Proizvod 3</h3>
-        <p class="py-4">
-            Detaljan opis proizvoda 3. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </p>
-        <div class="modal-action">
-            <form method="dialog">
-                <button class="btn">Zatvori</button>
-            </form>
-        </div>
-    </div>
-</dialog>
-
-<dialog id="modal_4" class="modal">
-    <div class="modal-box max-w-2xl">
-        <h3 class="font-bold text-lg">Proizvod 4</h3>
-        <p class="py-4">
-            Detaljan opis proizvoda 4. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </p>
-        <div class="modal-action">
-            <form method="dialog">
-                <button class="btn">Zatvori</button>
-            </form>
-        </div>
-    </div>
-</dialog>
-
+<!--Sekcija sa sertifikatima ---------------------------------------------------------------------------------------->
 
 
 <!--USLUZNA PROIZVODNJA---------------------------------------------------------------------------------------------->
+<div class="grid grid-cols-12 gap-8 py-20 px-4 bg-white">
+
+    <div class="col-span-5 col-start-2">
+        <img src="assets/z1.jpg" class="w-full h-auto object-cover shadow-xl">
+    </div>
+
+
+    <div class="col-span-5 ">
+        <p class="text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, deleniti quo perferendis rem tenetur praesentium. Voluptatum, officiis enim eos animi, quod blanditiis quas nam veritatis quasi nemo placeat ut? Earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dicta in dolor error dignissimos cupiditate voluptas natus voluptatem maxime explicabo rem repellat eveniet cumque, ducimus eos non assumenda dolorem laudantium!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea voluptatum perferendis? Architecto, est. Nostrum quod, nemo sunt atque qui aut repellendus excepturi blanditiis laborum rem eos molestias ducimus ad.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, aut! Ad, laborum sed ducimus sint voluptas tempore nihil dolore vitae aut, cumque est neque distinctio eveniet ea, dignissimos sit omnis!
+
+        </p>
+    </div>
+  
+</div>
 <!--KONTAKT --------------------------------------------------------------------------------------------------------->
+
+<div class="flex w-full flex-col bg-white">
+
+  <div class="divider devder-neutral">Kontakt</div>
+  
+</div>
+
 <!--FOOTER ---------------------------------------------------------------------------------------------------------->
 <footer class="footer footer-center p-10 bg-primary text-primary-content">
   <aside>
@@ -224,7 +334,7 @@
       <br />
       Proizvodnja vlažnih maramica
     </p>
-    <p>Copyright © 2024 - Sva prava zadržana</p>
+    <p>Copyright © 2025 - Sva prava zadržana</p>
   </aside>
   <nav>
     <div class="grid grid-flow-col gap-4">
@@ -267,3 +377,39 @@
 
 </body>
 </html>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.getElementById('infinite-carousel');
+    let currentIndex = 0;
+    const items = carousel.querySelectorAll('.carousel-item');
+    const itemCount = items.length;
+    
+    // Duplicate items for infinite effect
+    items.forEach(item => {
+      const clone = item.cloneNode(true);
+      carousel.appendChild(clone);
+    });
+    
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % itemCount;
+      const scrollPosition = items[0].clientWidth * currentIndex;
+      carousel.scrollTo({
+        left: scrollPosition,
+        behavior: 'smooth'
+      });
+    }
+    
+    // Auto-scroll every 1.5 seconds
+    setInterval(nextSlide, 1500);
+    
+    // Reset position when reaching the end (for infinite effect)
+    carousel.addEventListener('scroll', function() {
+      if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
+        carousel.scrollLeft = 0;
+      }
+    });
+  });
+</script>
