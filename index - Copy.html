@@ -16,28 +16,35 @@
     <meta property="og:description" content="" />
 
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- DaisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!--NAV ------------------------------------------------------------------------------------------------------------->
-<div class="navbar bg-base-100 shadow-sm">
-  <div class="flex-1">
-    <img src="assets/markus_logo.png" class="w-auto h-16">
-  </div>
-  <div class="flex-none">
+<div class="navbar bg-nav-color shadow-sm">
+  <div class="navbar-start"> 
     <ul class="menu menu-horizontal px-1">
-      <li><a>O nama</a></li>
-      <li><a>Proizvodi</a></li>
+     
+    <li><a>O nama</a></li>
+    <li><a>Proizvodi</a></li>
+    </ul>
+  </div>
+  <div class="navbar-center">
+    <img src="assets/markus_logo.png" class="h-16 w-auto" alt="Markus Logo">
+  </div>
+  <div class="navbar-end">
+    <ul class="menu menu-horizontal px-1">
+    
       <li><a>Uslužna proizvodnja</a></li>
       <li><a>Kontakt</a></li>
     </ul>
   </div>
 </div>
+
+
+
+
 <!--HERO------------------------------------------------------------------------------------------------------------->
 <div
   class="hero min-h-screen"
@@ -298,7 +305,7 @@
 <div class="grid grid-cols-12 gap-8 py-20 px-4 bg-white">
 
     <div class="col-span-5 col-start-2">
-        <img src="assets/z1.jpg" class="w-full h-auto object-cover shadow-xl">
+        <img src="assets/rukovanje.png" class="w-[90%] h-[90%] object-cover shadow-xl">
     </div>
 
 
