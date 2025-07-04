@@ -19,21 +19,49 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
+
+    <!--AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 <body>
 <!--NAV ------------------------------------------------------------------------------------------------------------->
 <div class="bg-white shadow-sm w-full">
-  <div class="max-w-7xl mx-auto flex items-center justify-center space-x-12 py-4">
-    <!-- Levi linkovi -->
-    <a class="text-sm font-medium">O nama</a>
-    <a class="text-sm font-medium">Proizvodi</a>
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-12 py-4">
 
-    <!-- LOGO -->
-    <img src="assets/markus_logo.png" alt="Markus Logo" class="h-12 w-auto" />
+    <!-- Levi linkovi (desktop) -->
+    <div class="hidden sm:flex items-center space-x-12">
+      <a class="text-sm font-medium">O nama</a>
+      <a class="text-sm font-medium">Proizvodi</a>
+    </div>
 
-    <!-- Desni linkovi -->
-    <a class="text-sm font-medium">Uslužna proizvodnja</a>
-    <a class="text-sm font-medium">Kontakt</a>
+    <!-- Logo + strelica meni (mobilni) -->
+    <div class="flex flex-col items-center space-y-[4px]">
+      <!-- Logo -->
+      <img src="assets/markus_logo.png" alt="Markus Logo" class="h-12 w-auto" />
+
+      <!-- Dropdown bez okvira -->
+      <details class="dropdown sm:hidden relative">
+        <summary class="m-0 p-0 flex items-center justify-center cursor-pointer peer">
+          <svg class="w-5 h-5 transition-transform duration-200 peer-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <ul class="menu dropdown-content bg-base-100 rounded-box z-10 w-44 p-2 shadow-sm left-1/2 transform -translate-x-1/2 mt-1">
+          <li><a href="#">O nama</a></li>
+          <li><a href="#">Proizvodi</a></li>
+          <li><a href="#">Uslužna proizvodnja</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </details>
+    </div>
+
+    <!-- Desni linkovi (desktop) -->
+    <div class="hidden sm:flex items-center space-x-12">
+      <a class="text-sm font-medium">Uslužna proizvodnja</a>
+      <a class="text-sm font-medium">Kontakt</a>
+    </div>
   </div>
 </div>
 
@@ -66,11 +94,13 @@
 <div class="grid grid-cols-6 gap-8 py-20 px-4 bg-white">
     <div class="col-span-4 col-start-2 ">
 
-    <div class="flex items-center justify-center w-[70%] mx-auto my-8">
-  <div class="flex-grow h-px bg-gradient-to-r from-transtapret via-gray-400 to-gray-600"></div>
-  <span class="px-4 text-4xl font-bold text-gray-800 whitespace-nowrap">O nama</span>
-  <div class="flex-grow h-px bg-gradient-to-l  from-transtapret via-gray-400 to-gray-600"></div>
-</div>
+    <div data-aos="fade-up">
+        <div class="flex items-center justify-center w-[70%] mx-auto my-8">
+          <div class="flex-grow h-px bg-gradient-to-r from-transtapret via-gray-400 to-gray-600"></div>
+            <span class="px-4 text-4xl font-bold text-gray-800 whitespace-nowrap">O nama</span>
+          <div class="flex-grow h-px bg-gradient-to-l  from-transtapret via-gray-400 to-gray-600"></div>
+        </div>
+    
 
       
       <p class="text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, deleniti quo perferendis rem tenetur praesentium. Voluptatum, officiis enim eos animi, quod blanditiis quas nam veritatis quasi nemo placeat ut? Earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dicta in dolor error dignissimos cupiditate voluptas natus voluptatem maxime explicabo rem repellat eveniet cumque, ducimus eos non assumenda dolorem laudantium!
@@ -78,6 +108,7 @@
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, aut! Ad, laborum sed ducimus sint voluptas tempore nihil dolore vitae aut, cumque est neque distinctio eveniet ea, dignissimos sit omnis!
 
         </p>
+      </div>
       </div>
 </div>
 
@@ -110,21 +141,24 @@
 
 
 
-<div class="grid grid-cols-6 gap-4 py-20 px-4 bg-white">
-   <div class="col-span-4 col-start-2 ">
-  
-  
-    <h1 class="mb-5 text-5xl font-bold text-center text-gray-700">Vas idealan partner sa dugom tradijicom</h1>
+<!--SARADNJA TEXT ----------------------------------------------------------------------->
 
+<div class="grid grid-cols-6 gap-8 py-20 px-4 bg-white">
+    <div class="col-span-4 col-start-2 ">
 
+    <div class="flex items-center justify-center w-[70%] mx-auto my-8">
+  <div class="flex-grow h-px bg-gradient-to-r from-transtapret via-gray-400 to-gray-600"></div>
+  <span class="px-4 text-4xl font-bold text-gray-800 whitespace-nowrap">25 godina na trzistu</span>
+  <div class="flex-grow h-px bg-gradient-to-l  from-transtapret via-gray-400 to-gray-600"></div>
+</div>
+
+      
       <p class="text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, deleniti quo perferendis rem tenetur praesentium. Voluptatum, officiis enim eos animi, quod blanditiis quas nam veritatis quasi nemo placeat ut? Earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dicta in dolor error dignissimos cupiditate voluptas natus voluptatem maxime explicabo rem repellat eveniet cumque, ducimus eos non assumenda dolorem laudantium!
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea voluptatum perferendis? Architecto, est. Nostrum quod, nemo sunt atque qui aut repellendus excepturi blanditiis laborum rem eos molestias ducimus ad.
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, aut! Ad, laborum sed ducimus sint voluptas tempore nihil dolore vitae aut, cumque est neque distinctio eveniet ea, dignissimos sit omnis!
 
         </p>
-
-    </div>
-
+      </div>
 </div>
 
 <!--PROIZVODI-------------------------------------------------------------------------------------------------------->
@@ -133,61 +167,72 @@
  
     
    <div id="Proizvodi" class="bg-white py-8">
-  <h1 class="mb-6 text-2xl md:text-3xl font-bold text-center text-gray-900"> Nasi proizvodi</h1>
+
+
+
+    <div class="flex items-center justify-center w-[70%] mx-auto my-8">
+  <div class="flex-grow h-px bg-gradient-to-r from-transtapret via-gray-400 to-gray-600"></div>
+  <span class="px-4 text-4xl font-bold text-gray-800 whitespace-nowrap">Nasi proizvodi</span>
+  <div class="flex-grow h-px bg-gradient-to-l  from-transtapret via-gray-400 to-gray-600"></div>
+</div>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-6xl mx-auto px-4 md:px-8">
   
     <!-- Kartica 1 -->
-    <div class="card w-[500px] h-[550px] bg-base-100  border border-gray-300 shadow-xl rounded-lg flex flex-col overflow-hidden mx-auto">
-      <div class="flex items-center justify-center h-[450px] p-2">
-        <img src="M_S_slike_nove/baby fit.jpg" alt="Baby Fit" class="object-contain max-h-full max-w-full">
-      </div>
-      <div class="card-body p-2  items-center text-center">
-        <h2 class="card-title text-base font-semibold">Baby Fit Wet wipes</h2>
-        <div class="card-actions justify-center">
-          <button class="btn btn-primary btn-sm" onclick="modal_1.showModal()">Detalji</button>
-        </div>
-      </div>
+   <div class="card w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl bg-base-100 border border-gray-300 shadow-xl rounded-lg flex flex-col overflow-hidden mx-auto">
+  <div class="flex items-center justify-center p-2">
+    <img src="M_S_slike_nove/baby fit.jpg" alt="Baby Fit" class="w-full h-auto max-h-80 sm:max-h-96 object-contain">
+  </div>
+  <div class="card-body p-2 items-center text-center">
+    <h2 class="card-title text-base font-semibold">Baby Fit Wet wipes</h2>
+    <div class="card-actions justify-center">
+      <button class="btn btn-primary btn-sm" onclick="my_modal_1.showModal()">Detalji</button>
     </div>
+  </div>
+</div>
+
 
     <!-- Kartica 2 -->
-   <div class="card w-[500px] h-[550px] bg-base-100  border border-gray-300 shadow-xl rounded-lg flex flex-col overflow-hidden mx-auto">
-      <div class="flex items-center justify-center h-[450px] p-2">
-        <img src="M_S_slike_nove/perfecto fit.jpg" alt="Baby Fit" class="object-contain max-h-full max-w-full">
-      </div>
-      <div class="card-body p-2  items-center text-center">
-        <h2 class="card-title text-base font-semibold">Baby Fit Wet wipes</h2>
-        <div class="card-actions justify-center">
-          <button class="btn btn-primary btn-sm" onclick="modal_1.showModal()">Detalji</button>
-        </div>
-      </div>
+  <div class="card w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl bg-base-100 border border-gray-300 shadow-xl rounded-lg flex flex-col overflow-hidden mx-auto">
+  <div class="flex items-center justify-center p-2">
+    <img src="M_S_slike_nove/perfecto fit.jpg" alt="Baby Fit" class="w-full h-auto max-h-80 sm:max-h-96 object-contain">
+  </div>
+  <div class="card-body p-2 items-center text-center">
+    <h2 class="card-title text-base font-semibold">Perfecto wet wipes</h2>
+    <div class="card-actions justify-center">
+      <button class="btn btn-primary btn-sm" onclick="my_modal_2.showModal()">Detalji</button>
     </div>
+  </div>
+</div>
+
 
     <!-- Kartica 3 -->
-  <div class="card w-[500px] h-[550px] bg-base-100  border border-gray-300 shadow-xl rounded-lg flex flex-col overflow-hidden mx-auto">
-      <div class="flex items-center justify-center h-[450px] p-2">
-        <img src="M_S_slike_nove/universal.jpg" alt="Baby Fit" class="object-contain max-h-full max-w-full">
-      </div>
-      <div class="card-body p-2  items-center text-center">
-        <h2 class="card-title text-base font-semibold">Baby Fit Wet wipes</h2>
-        <div class="card-actions justify-center">
-          <button class="btn btn-primary btn-sm" onclick="modal_1.showModal()">Detalji</button>
-        </div>
-      </div>
+ <div class="card w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl bg-base-100 border border-gray-300 shadow-xl rounded-lg flex flex-col overflow-hidden mx-auto">
+  <div class="flex items-center justify-center p-2">
+    <img src="M_S_slike_nove/universal.jpg" alt="Baby Fit" class="w-full h-auto max-h-80 sm:max-h-96 object-contain">
+  </div>
+  <div class="card-body p-2 items-center text-center">
+    <h2 class="card-title text-base font-semibold">Universal wet wipes</h2>
+    <div class="card-actions justify-center">
+      <button class="btn btn-primary btn-sm" onclick="my_modal_3.showModal()">Detalji</button>
     </div>
+  </div>
+</div>
+
 
     <!-- Kartica 4 -->
-   <div class="card w-[500px] h-[550px] bg-base-100  border border-gray-300 shadow-xl rounded-lg flex flex-col overflow-hidden mx-auto">
-      <div class="flex items-center justify-center h-[450px] p-2">
-        <img src="M_S_slike_nove/disinfect.jpg" alt="Baby Fit" class="object-contain max-h-full max-w-full">
-      </div>
-      <div class="card-body p-2  items-center text-center">
-        <h2 class="card-title text-base font-semibold">Baby Fit Wet wipes</h2>
-        <div class="card-actions justify-center">
-          <button class="btn btn-primary btn-sm" onclick="modal_1.showModal()">Detalji</button>
-        </div>
-      </div>
+<div class="card w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl bg-base-100 border border-gray-300 shadow-xl rounded-lg flex flex-col overflow-hidden mx-auto">
+  <div class="flex items-center justify-center p-2">
+    <img src="M_S_slike_nove/disinfect.jpg" alt="Baby Fit" class="w-full h-auto max-h-80 sm:max-h-96 object-contain">
+  </div>
+  <div class="card-body p-2 items-center text-center">
+    <h2 class="card-title text-base font-semibold">Desinfect wet wipes</h2>
+    <div class="card-actions justify-center">
+      <button class="btn btn-primary btn-sm" onclick="my_modal_4.showModal()">Detalji</button>
     </div>
+  </div>
+</div>
+
 
   </div>
 </div>
@@ -203,128 +248,66 @@
 
 
 <!-- Modali za svaku karticu -->
-<dialog id="modal_1" class="modal modal-bottom sm:modal-middle">
-  <div class="modal-box max-w-4xl w-full mx-2 sm:mx-0">
-    <!-- Header with title and close button -->
-    <div class="flex justify-between items-start mb-4">
-      <h3 class="font-bold text-lg"></h3>
+<!--Modal 1 -->
+
+<dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Baby fit</h3>
+    <p class="py-4">Deskripcija koju naknadno treba smisliti za proizvod baby fit</p>
+    <div class="modal-action">
       <form method="dialog">
-        <button class="btn btn-circle btn-sm">✕</button>
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
       </form>
     </div>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="relative pt-[100%] rounded-lg overflow-hidden">
-        <img src="assets/Baby Fit 72pcs Blue.jpg" alt="Proizvod 1" class="absolute top-0 left-0 w-full h-full object-cover">
-      </div>
-      <div>
-        <div class="flex flex-col gap-4">
-          <h3 class="font-bold text-lg text-white-900">Proizvod 1 - Detalji</h3>
-          <div class="divider my-0"></div>
-          
-          <p class="text-white-700">Detaljan opis proizvoda sa svim karakteristikama i specifikacijama koje bi korisnik želeo da zna pre kupovine.</p>
-        </div>
-      </div>
-    </div>
   </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>zatvori</button>
-  </form>
 </dialog>
 
-<dialog id="modal_2" class="modal modal-bottom sm:modal-middle">
- 
-  <div class="modal-box max-w-4xl w-full mx-2 sm:mx-0">
-    <!-- Header with title and close button -->
-    <div class="flex justify-between items-start mb-4">
-      <h3 class="font-bold text-lg"></h3>
+<!--Modal 2 -->
+
+<dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Perfecto fit</h3>
+    <p class="py-4">Deskripcija koju naknadno treba smisliti za proizvod "Perfecto fit" maramice za namestaj</p>
+    <div class="modal-action">
       <form method="dialog">
-        <button class="btn btn-circle btn-sm">✕</button>
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
       </form>
     </div>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="relative pt-[100%] rounded-lg overflow-hidden">
-        <img src="assets/Baby Fit 72pcs Blue.jpg" alt="Proizvod 1" class="absolute top-0 left-0 w-full h-full object-cover">
-      </div>
-      <div>
-        <div class="flex flex-col gap-4">
-          <h3 class="font-bold text-lg text-white-900">Proizvod 1 - Detalji</h3>
-          <div class="divider my-0"></div>
-          
-          <p class="text-white-700">Detaljan opis proizvoda sa svim karakteristikama i specifikacijama koje bi korisnik želeo da zna pre kupovine.</p>
-        </div>
-      </div>
+  </div>
+</dialog>
+
+<!--Modal 3 -->
+
+<dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Universal</h3>
+    <p class="py-4">Deskripcija koju naknadno treba smisliti za proizvod "Universal fit"</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
     </div>
   </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>zatvori</button>
-  </form>
 </dialog>
 
 
-<dialog id="modal_3" class="modal modal-bottom sm:modal-middle">
+<!--Modal 4 -->
 
-  <div class="modal-box max-w-4xl w-full mx-2 sm:mx-0">
-    <!-- Header with title and close button -->
-    <div class="flex justify-between items-start mb-4">
-      <h3 class="font-bold text-lg"></h3>
+<dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Desinfik</h3>
+    <p class="py-4">Deskripcija koju naknadno treba smisliti za proizvod dezinfekcione maramice</p>
+    <div class="modal-action">
       <form method="dialog">
-        <button class="btn btn-circle btn-sm">✕</button>
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
       </form>
     </div>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="relative pt-[100%] rounded-lg overflow-hidden">
-        <img src="assets/Baby Fit 72pcs Blue.jpg" alt="Proizvod 1" class="absolute top-0 left-0 w-full h-full object-cover">
-      </div>
-      <div>
-        <div class="flex flex-col gap-4">
-          <h3 class="font-bold text-lg text-white-900">Proizvod 1 - Detalji</h3>
-          <div class="divider my-0"></div>
-          
-          <p class="text-white-700">Detaljan opis proizvoda sa svim karakteristikama i specifikacijama koje bi korisnik želeo da zna pre kupovine.</p>
-        </div>
-      </div>
-    </div>
   </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>zatvori</button>
-  </form>
-
 </dialog>
-
-<dialog id="modal_4" class="modal modal-bottom sm:modal-middle">
-
-  <div class="modal-box max-w-4xl w-full mx-2 sm:mx-0">
-    <!-- Header with title and close button -->
-    <div class="flex justify-between items-start mb-4">
-      <h3 class="font-bold text-lg"></h3>
-      <form method="dialog">
-        <button class="btn btn-circle btn-sm">✕</button>
-      </form>
-    </div>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="relative pt-[100%] rounded-lg overflow-hidden">
-        <img src="assets/Baby Fit 72pcs Blue.jpg" alt="Proizvod 1" class="absolute top-0 left-0 w-full h-full object-cover">
-      </div>
-      <div>
-        <div class="flex flex-col gap-4">
-          <h3 class="font-bold text-lg text-white-900">Proizvod 1 - Detalji</h3>
-          <div class="divider my-0"></div>
-          
-          <p class="text-white-700">Detaljan opis proizvoda sa svim karakteristikama i specifikacijama koje bi korisnik želeo da zna pre kupovine.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>zatvori</button>
-  </form>
-
-</dialog>
-
 
 
 
@@ -332,9 +315,11 @@
 <!--USLUZNA PROIZVODNJA---------------------------------------------------------------------------------------------->
 
     <div class="flex items-center justify-center w-[70%] mx-auto my-8">
+ <div class="flex items-center justify-center w-[70%] mx-auto my-8">
   <div class="flex-grow h-px bg-gradient-to-r from-transtapret via-gray-400 to-gray-600"></div>
   <span class="px-4 text-4xl font-bold text-gray-800 whitespace-nowrap">Usluzna proizvodnja</span>
   <div class="flex-grow h-px bg-gradient-to-l  from-transtapret via-gray-400 to-gray-600"></div>
+</div>
   </div>
 <div class="grid grid-cols-12 gap-8 py-20 px-4 bg-white">
 
@@ -358,8 +343,15 @@
 <!--KONTAKT --------------------------------------------------------------------------------------------------------->
 
 <div class="flex w-full flex-col bg-white">
+ <div class="flex items-center justify-center w-[70%] mx-auto my-8">
+  <div class="flex-grow h-px bg-gradient-to-r from-transtapret via-gray-400 to-gray-600"></div>
+  <span class="px-4 text-4xl font-bold text-gray-800 whitespace-nowrap">Kontakt</span>
+  <div class="flex-grow h-px bg-gradient-to-l  from-transtapret via-gray-400 to-gray-600"></div>
 
-  <div class="divider devder-neutral">Kontakt</div>
+
+
+
+</div>
   
 </div>
 
@@ -427,37 +419,17 @@
 </html>
 
 
-
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const carousel = document.getElementById('infinite-carousel');
-    let currentIndex = 0;
-    const items = carousel.querySelectorAll('.carousel-item');
-    const itemCount = items.length;
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
     
-    // Duplicate items for infinite effect
-    items.forEach(item => {
-      const clone = item.cloneNode(true);
-      carousel.appendChild(clone);
-    });
-    
-    function nextSlide() {
-      currentIndex = (currentIndex + 1) % itemCount;
-      const scrollPosition = items[0].clientWidth * currentIndex;
-      carousel.scrollTo({
-        left: scrollPosition,
-        behavior: 'smooth'
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
       });
     }
-    
-    // Auto-scroll every 1.5 seconds
-    setInterval(nextSlide, 1500);
-    
-    // Reset position when reaching the end (for infinite effect)
-    carousel.addEventListener('scroll', function() {
-      if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
-        carousel.scrollLeft = 0;
-      }
-    });
+
+    AOS.init();
   });
 </script>
