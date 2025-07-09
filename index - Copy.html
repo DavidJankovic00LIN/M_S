@@ -1,47 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="sr">
 <head>
-<title>Proizvodnja vlažnih maramica - Markus CO</title>
+  <title>Proizvodnja vlažnih maramica - Markus CO</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="generator" content="comingsoonpage.com 1.0.0" />
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="icon.ico">
+  <meta property="og:url" content="www.markus.rs" />
+  <meta property="og:type" content="Vlazne maramice" />
+  <meta property="og:title" content="Vlažne maramice za bebe. Markus Co" />
+  <meta property="og:description" content="" />
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css">
 
-    <meta name="generator" content="comingsoonpage.com 1.0.0" />
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="icon.ico">
-    <meta property="og:url" content="www.markus.rs" />
-    <meta property="og:type" content="Vlazne maramice" />
-    <meta property="og:title" content="Vlazne maramice za bebe. Markus Co" />
-    <meta property="og:description" content="" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css">
-
-    <!--AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-<!--NAV ------------------------------------------------------------------------------------------------------------->
+<body class="font-[Inter]">
+
+<!-- NAV -->
 <div class="bg-white shadow-sm w-full">
   <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-12 py-4">
 
     <!-- Levi linkovi (desktop) -->
     <div class="hidden sm:flex items-center space-x-12">
-      <a class="text-sm font-medium">O nama</a>
-      <a class="text-sm font-medium">Proizvodi</a>
+      <a class="text-sm font-medium font-[Inter]">O nama</a>
+      <a class="text-sm font-medium font-[Inter]">Proizvodi</a>
     </div>
 
-    <!-- Logo + strelica meni (mobilni) -->
+    <!-- Logo + meni (mobilni) -->
     <div class="flex flex-col items-center space-y-[4px]">
-      <!-- Logo -->
       <img src="assets/markus_logo.png" alt="Markus Logo" class="h-12 w-auto" />
 
-      <!-- Dropdown bez okvira -->
       <details class="dropdown sm:hidden relative">
         <summary class="m-0 p-0 flex items-center justify-center cursor-pointer peer">
           <svg class="w-5 h-5 transition-transform duration-200 peer-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -49,279 +50,241 @@
           </svg>
         </summary>
         <ul class="menu dropdown-content bg-base-100 rounded-box z-10 w-44 p-2 shadow-sm left-1/2 transform -translate-x-1/2 mt-1">
-          <li><a href="#">O nama</a></li>
-          <li><a href="#">Proizvodi</a></li>
-          <li><a href="#">Uslužna proizvodnja</a></li>
-          <li><a href="#">Kontakt</a></li>
+          <li><a href="#" class="font-[Inter]">O nama</a></li>
+          <li><a href="#" class="font-[Inter]">Proizvodi</a></li>
+          <li><a href="#" class="font-[Inter]">Uslužna proizvodnja</a></li>
+          <li><a href="#" class="font-[Inter]">Kontakt</a></li>
         </ul>
       </details>
     </div>
 
     <!-- Desni linkovi (desktop) -->
     <div class="hidden sm:flex items-center space-x-12">
-      <a class="text-sm font-medium">Uslužna proizvodnja</a>
-      <a class="text-sm font-medium">Kontakt</a>
+      <a class="text-sm font-medium font-[Inter]">Uslužna proizvodnja</a>
+      <a class="text-sm font-medium font-[Inter]">Kontakt</a>
     </div>
   </div>
 </div>
 
-
-
-
-
-<!--HERO------------------------------------------------------------------------------------------------------------->
-<div
-  class="hero min-h-screen"
-  style="background-image: url(M_S_slike_nove/Egipat\ 2012\ BABY\ FIT\ photo.jpg);"
->
+<!-- HERO ----------------------------------------------------------------------------------------------------->
+<div class="hero min-h-screen" style="background-image: url(M_S_slike_nove/Egipat\ 2012\ BABY\ FIT\ photo.jpg);">
   <div class="hero-overlay"></div>
   <div class="hero-content text-neutral-content text-center">
     <div class="max-w-md">
-      <h1 class="mb-5 text-5xl font-bold">Sloga ili logo ovde</h1>
-      <p class="mb-5">
-       Mozda ovde neki sloga,zavisi sta oslucimo gore
-      </p>
-      <button class="btn btn-primary">Dugme koje ce da skroluje na sekciju ispod</button>
+      <h1 class="mb-5 text-5xl font-bold font-[Inter]">Vaša svakodnevna nega. Naša posvećenost.</h1>
+      <p class="mb-5 font-[Inter]">Kvalitetne vlažne maramice i proizvodi osmišljeni da pruže sigurnost, nežnost i praktičnost za celu porodicu.</p>
+      <button class="btn font-[Inter]" style="background-color: #d2b277;">Saznajte više</button>
     </div>
   </div>
 </div>
-<!--O nama ---------------------------------------------------------------------------------------------------------->
 
-
-
-
-
-<div class="grid grid-cols-6 gap-8 py-20 px-4 bg-white">
-    <div class="col-span-4 col-start-2 ">
-
-    <div data-aos="fade-up">
+<!-- O NAMA ---------------------------------------------------------------------------------------------------->
+<div id="o_nama">
+  <div class="grid grid-cols-6 gap-8 py-20 px-4 bg-white">
+    <div class="col-span-4 col-start-2">
+      <div data-aos="fade-up">
         <div class="flex items-center justify-center w-[70%] mx-auto my-8">
-          <div class="flex-grow h-px bg-gradient-to-r from-transtapret via-gray-400 to-gray-600"></div>
-            <span class="px-4 text-4xl font-bold text-gray-800 whitespace-nowrap">O nama</span>
-          <div class="flex-grow h-px bg-gradient-to-l  from-transtapret via-gray-400 to-gray-600"></div>
+          <div class="flex-grow h-px bg-gradient-to-r from-transparent via-gray-400 to-gray-600"></div>
+          <span class="px-4 text-4xl font-bold text-gray-800 whitespace-nowrap font-[Inter]">O nama</span>
+          <div class="flex-grow h-px bg-gradient-to-l from-transparent via-gray-400 to-gray-600"></div>
         </div>
-    
-
-      
-      <p class="text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, deleniti quo perferendis rem tenetur praesentium. Voluptatum, officiis enim eos animi, quod blanditiis quas nam veritatis quasi nemo placeat ut? Earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dicta in dolor error dignissimos cupiditate voluptas natus voluptatem maxime explicabo rem repellat eveniet cumque, ducimus eos non assumenda dolorem laudantium!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea voluptatum perferendis? Architecto, est. Nostrum quod, nemo sunt atque qui aut repellendus excepturi blanditiis laborum rem eos molestias ducimus ad.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, aut! Ad, laborum sed ducimus sint voluptas tempore nihil dolore vitae aut, cumque est neque distinctio eveniet ea, dignissimos sit omnis!
-
+        <p class="text-gray-700 font-[Inter] text-lg">
+          Markus Co je porodična firma iz Valjeva, osnovana 1994. godine, sa jasnom misijom da potrošačima obezbedi kvalitetne i pristupačne proizvode za ličnu higijenu. Sa savremenom opremom i posvećenim timom, razvijamo sopstvene brendove i uspešno sarađujemo sa domaćim i inostranim partnerima, gradeći poverenje kroz kvalitet, odgovornost i inovacije.
         </p>
       </div>
-      </div>
+    </div>
+  </div>
 </div>
+
 
 <!-- SERTIFIKACIJA--------------------------------------------------------------------------------------------------->
 
 
+<!-- SERTIFIKACIJA -->
 <div class="bg-white py-20 px-4">
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
     
     <!-- Ikonica 1 -->
-     <div data-aos="fade-right">
-
-          <div class="flex flex-col items-center text-center">
-            <img src="assets/m_ic_1.png" alt="Ikonica 1" class="w-40 h-40 mb-4">
-            <h3 class="text-lg font-semibold text-gray-800">Tradicija duga 25 godina</h3>
-          </div>
-      </div>
-    
-    <!-- Ikonica 2 -->
-        <div data-aos="fade-up">
-           <div class="flex flex-col items-center text-center">
-              <img src="assets/m_ic_2.png" alt="Ikonica 2" class="w-40 h-40 mb-4">
-              <h3 class="text-lg font-semibold text-gray-800">Sertifikovana proizvodnja</h3>
-            </div>
-        </div>
-    
-    <!-- Ikonica 3  -->
-
-     <div data-aos="fade-left">
+    <div data-aos="fade-right">
       <div class="flex flex-col items-center text-center">
-        <img src="assets/m_ic_1.png" alt="Ikonica 3" class="w-40 h-40 mb-4">
-        <h3 class="text-lg font-semibold text-gray-800">Neka treca istaknuta stvar</h3>
+        <img src="assets/m_ic_1.png" alt="Ikonica 1" class="w-40 h-40 mb-4">
+        <h3 class="text-lg font-semibold text-gray-800 font-[Inter]">Tradicija duga 25 godina</h3>
+        <p class="text-gray-700 font-[Inter] text-base mt-2">Više od dve decenije iskustva i posvećenosti kvalitetu potvrđuju naše mesto na tržištu.</p>
       </div>
-     </div>
+    </div>
 
+    <!-- Ikonica 2 -->
+    <div data-aos="fade-up">
+      <div class="flex flex-col items-center text-center">
+        <img src="assets/m_ic_2.png" alt="Ikonica 2" class="w-40 h-40 mb-4">
+        <h3 class="text-lg font-semibold text-gray-800 font-[Inter]">Sertifikovana proizvodnja</h3>
+        <p class="text-gray-700 font-[Inter] text-base mt-2">Naši proizvodi nastaju u kontrolisanim uslovima, uz poštovanje najviših standarda kvaliteta i bezbednosti.</p>
+      </div>
+    </div>
+
+    <!-- Ikonica 3 -->
+    <div data-aos="fade-left">
+      <div class="flex flex-col items-center text-center">
+        <img src="assets/ikonica_3.jpg" alt="Ikonica 3" class="w-40 h-40 mb-4">
+        <h3 class="text-lg font-semibold text-gray-800 font-[Inter]">Posvećenost kupcima</h3>
+        <p class="text-gray-700 font-[Inter] text-base mt-2">Naša filozofija temelji se na slušanju vaših potreba i neprekidnom unapređenju naših proizvoda i usluga.</p>
+      </div>
+    </div>
   </div>
 </div>
 
-
-
-<!--SARADNJA TEXT ----------------------------------------------------------------------->
-
+<!-- SARADNJA TEXT -->
 <div class="grid grid-cols-6 gap-8 py-20 px-4 bg-white">
- 
-    <div class="col-span-4 col-start-2 ">
- <div data-aos="fade-up">
-    <div class="flex items-center justify-center w-[70%] mx-auto my-8">
-  <div class="flex-grow h-px bg-gradient-to-r from-transtapret via-gray-400 to-gray-600"></div>
-  <span class="px-4 text-4xl font-bold text-gray-800 whitespace-nowrap">25 godina na trzistu</span>
-  <div class="flex-grow h-px bg-gradient-to-l  from-transtapret via-gray-400 to-gray-600"></div>
-</div>
-
-      
-      <p class="text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, deleniti quo perferendis rem tenetur praesentium. Voluptatum, officiis enim eos animi, quod blanditiis quas nam veritatis quasi nemo placeat ut? Earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dicta in dolor error dignissimos cupiditate voluptas natus voluptatem maxime explicabo rem repellat eveniet cumque, ducimus eos non assumenda dolorem laudantium!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea voluptatum perferendis? Architecto, est. Nostrum quod, nemo sunt atque qui aut repellendus excepturi blanditiis laborum rem eos molestias ducimus ad.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, aut! Ad, laborum sed ducimus sint voluptas tempore nihil dolore vitae aut, cumque est neque distinctio eveniet ea, dignissimos sit omnis!
-
-        </p>
+  <div class="col-span-4 col-start-2">
+    <div data-aos="fade-up">
+      <div class="flex items-center justify-center w-[70%] mx-auto my-8">
+        <div class="flex-grow h-px bg-gradient-to-r from-transparent via-gray-400 to-gray-600"></div>
+        <span class="px-4 text-4xl font-bold text-gray-800 whitespace-nowrap font-[Inter]">25 godina na tržištu</span>
+        <div class="flex-grow h-px bg-gradient-to-l from-transparent via-gray-400 to-gray-600"></div>
       </div>
+      <p class="text-gray-700 font-[Inter] text-lg">
+        Više od 25 godina rastemo zajedno sa vama, prilagođavajući se promenama tržišta i potrebama naših potrošača. Svaki naš proizvod razvijen je sa pažnjom i stručnošću kako bi obezbedio sigurnost, kvalitet i pristupačnost, potvrđujući poverenje generacija koje nas biraju.
+      </p>
+    </div>
   </div>
 </div>
+
 
 <!--PROIZVODI-------------------------------------------------------------------------------------------------------->
+<div id="Proizvodi" class="bg-white py-20">
+  <div class="flex items-center justify-center w-[70%] mx-auto my-8">
+    <div class="flex-grow h-px bg-gradient-to-r from-transparent via-gray-400 to-gray-600"></div>
+    <span class="px-4 text-4xl font-bold text-gray-800 whitespace-nowrap font-[Inter]">Naši proizvodi</span>
+    <div class="flex-grow h-px bg-gradient-to-l from-transparent via-gray-400 to-gray-600"></div>
+  </div>
 
+  <p class="text-center max-w-2xl mx-auto text-gray-700 text-lg mb-12 font-[Inter]">
+    Naša linija vlažnih maramica osmišljena je da zadovolji najrazličitije potrebe – od nežne nege beba, preko univerzalnog čišćenja, do specijalizovanih dezinfekcionih rešenja. Kvalitet, praktičnost i pouzdanost u svakom pakovanju.
+  </p>
 
- 
-    
-   <div id="Proizvodi" class="bg-white py-8">
-
-
-
-    <div class="flex items-center justify-center w-[70%] mx-auto my-8">
-  <div class="flex-grow h-px bg-gradient-to-r from-transtapret via-gray-400 to-gray-600"></div>
-  <span class="px-4 text-4xl font-bold text-gray-800 whitespace-nowrap">Nasi proizvodi</span>
-  <div class="flex-grow h-px bg-gradient-to-l  from-transtapret via-gray-400 to-gray-600"></div>
-</div>
-
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-6xl mx-auto px-4 md:px-8">
-  
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-6xl mx-auto px-4 md:px-8">
     <!-- Kartica 1 -->
-     <div data-aos="fade-down-right">
-   <div class="card w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl bg-base-100 border border-gray-300 shadow-xl rounded-lg flex flex-col overflow-hidden mx-auto">
-  <div class="flex items-center justify-center p-2">
-    <img src="M_S_slike_nove/baby fit.jpg" alt="Baby Fit" class="w-full h-auto max-h-80 sm:max-h-96 object-contain">
-  </div>
-  <div class="card-body p-2 items-center text-center">
-    <h2 class="card-title text-base font-semibold">Baby Fit Wet wipes</h2>
-    <div class="card-actions justify-center">
-      <button class="btn btn-primary btn-sm" onclick="my_modal_1.showModal()">Detalji</button>
-    </div>
-  </div>
-</div>
-</div>
-
-
-    <!-- Kartica 2 -->
-     <div data-aos="fade-down-left">
-        <div class="card w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl bg-base-100 border border-gray-300 shadow-xl rounded-lg flex flex-col overflow-hidden mx-auto">
+    <div data-aos="fade-down-right">
+      <div class="card w-full bg-base-100 border border-gray-300 shadow-xl rounded-lg flex flex-col overflow-hidden mx-auto">
         <div class="flex items-center justify-center p-2">
-          <img src="M_S_slike_nove/perfecto fit.jpg" alt="Baby Fit" class="w-full h-auto max-h-80 sm:max-h-96 object-contain">
+          <img src="M_S_slike_nove/baby fit.jpg" alt="Baby Fit" class="w-full h-auto max-h-80 sm:max-h-96 object-contain">
         </div>
-        <div class="card-body p-2 items-center text-center">
-          <h2 class="card-title text-base font-semibold">Perfecto wet wipes</h2>
-          <div class="card-actions justify-center">
-            <button class="btn btn-primary btn-sm" onclick="my_modal_2.showModal()">Detalji</button>
+        <div class="card-body p-4 items-center text-center">
+          <h2 class="card-title text-lg font-semibold font-[Inter]">Baby Fit Wet Wipes</h2>
+          <p class="text-gray-700 text-base font-[Inter]">Nežna i sigurna zaštita za najosetljiviju kožu vaše bebe, uz pažljivo odabrane sastojke i bezbednost na prvom mestu.</p>
+          <div class="card-actions justify-center mt-4">
+            <button class="btn font-[Inter]" style="background-color: #d2b277;" onclick="my_modal_1.showModal()">Detalji</button>
           </div>
         </div>
       </div>
-      </div>
+    </div>
 
+    <!-- Kartica 2 -->
+    <div data-aos="fade-down-left">
+      <div class="card w-full bg-base-100 border border-gray-300 shadow-xl rounded-lg flex flex-col overflow-hidden mx-auto">
+        <div class="flex items-center justify-center p-2">
+          <img src="M_S_slike_nove/perfecto fit.jpg" alt="Perfecto" class="w-full h-auto max-h-80 sm:max-h-96 object-contain">
+        </div>
+        <div class="card-body p-4 items-center text-center">
+          <h2 class="card-title text-lg font-semibold font-[Inter]">Perfecto Wet Wipes</h2>
+          <p class="text-gray-700 text-base font-[Inter]">Idealne za osvežavanje i čišćenje nameštaja i površina, praktične za svako domaćinstvo i profesionalnu upotrebu.</p>
+          <div class="card-actions justify-center mt-4">
+            <button class="btn font-[Inter]" style="background-color: #d2b277;" onclick="my_modal_2.showModal()">Detalji</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Kartica 3 -->
-     <div data-aos="fade-up-right">
- <div class="card w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl bg-base-100 border border-gray-300 shadow-xl rounded-lg flex flex-col overflow-hidden mx-auto">
-  <div class="flex items-center justify-center p-2">
-    <img src="M_S_slike_nove/universal.jpg" alt="Baby Fit" class="w-full h-auto max-h-80 sm:max-h-96 object-contain">
-  </div>
-  <div class="card-body p-2 items-center text-center">
-    <h2 class="card-title text-base font-semibold">Universal wet wipes</h2>
-    <div class="card-actions justify-center">
-      <button class="btn btn-primary btn-sm" onclick="my_modal_3.showModal()">Detalji</button>
+    <div data-aos="fade-up-right">
+      <div class="card w-full bg-base-100 border border-gray-300 shadow-xl rounded-lg flex flex-col overflow-hidden mx-auto">
+        <div class="flex items-center justify-center p-2">
+          <img src="M_S_slike_nove/universal.jpg" alt="Universal" class="w-full h-auto max-h-80 sm:max-h-96 object-contain">
+        </div>
+        <div class="card-body p-4 items-center text-center">
+          <h2 class="card-title text-lg font-semibold font-[Inter]">Universal Wet Wipes</h2>
+          <p class="text-gray-700 text-base font-[Inter]">Svestrane maramice za brzo i lako čišćenje raznih površina, uvek spremne da pruže svežinu i higijenu kada je najpotrebnije.</p>
+          <div class="card-actions justify-center mt-4">
+            <button class="btn font-[Inter]" style="background-color: #d2b277;" onclick="my_modal_3.showModal()">Detalji</button>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</div>
-
 
     <!-- Kartica 4 -->
     <div data-aos="fade-up-left">
-  <div class="card w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl bg-base-100 border border-gray-300 shadow-xl rounded-lg flex flex-col overflow-hidden mx-auto">
-  <div class="flex items-center justify-center p-2">
-    <img src="M_S_slike_nove/disinfect.jpg" alt="Baby Fit" class="w-full h-auto max-h-80 sm:max-h-96 object-contain">
-  </div>
-  <div class="card-body p-2 items-center text-center">
-    <h2 class="card-title text-base font-semibold">Desinfect wet wipes</h2>
-    <div class="card-actions justify-center">
-      <button class="btn btn-primary btn-sm" onclick="my_modal_4.showModal()">Detalji</button>
+      <div class="card w-full bg-base-100 border border-gray-300 shadow-xl rounded-lg flex flex-col overflow-hidden mx-auto">
+        <div class="flex items-center justify-center p-2">
+          <img src="M_S_slike_nove/disinfect.jpg" alt="Desinfect" class="w-full h-auto max-h-80 sm:max-h-96 object-contain">
+        </div>
+        <div class="card-body p-4 items-center text-center">
+          <h2 class="card-title text-lg font-semibold font-[Inter]">Desinfect Wet Wipes</h2>
+          <p class="text-gray-700 text-base font-[Inter]">Specijalizovane maramice sa dezinfekcionim dejstvom, za dodatnu sigurnost i higijenu u vašem domu i radnom prostoru.</p>
+          <div class="card-actions justify-center mt-4">
+            <button class="btn font-[Inter]" style="background-color: #d2b277;" onclick="my_modal_4.showModal()">Detalji</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-</div>
 
-
-  </div>
-</div>
-
-
-
-  </div>
-
-
-
-
-
-
-
-<!-- Modali za svaku karticu -->
-<!--Modal 1 -->
-
+<!--Modali -->
+<!-- Modal 1 -->
 <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
   <div class="modal-box">
-    <h3 class="text-lg font-bold">Baby fit</h3>
-    <p class="py-4">Deskripcija koju naknadno treba smisliti za proizvod baby fit</p>
+    <h3 class="text-lg font-bold font-[Inter]">Baby Fit Wet Wipes</h3>
+    <p class="py-4 font-[Inter]">
+      Vlažne maramice posebno formulirane za nežnu i sigurnu negu bebine osetljive kože. Bez alkohola i parabena, uz dodatak umirujućih sastojaka koji pružaju osećaj svežine i čistoće.
+    </p>
     <div class="modal-action">
       <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
+        <button class="btn font-[Inter]">Zatvori</button>
       </form>
     </div>
   </div>
 </dialog>
 
-<!--Modal 2 -->
-
+<!-- Modal 2 -->
 <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
   <div class="modal-box">
-    <h3 class="text-lg font-bold">Perfecto fit</h3>
-    <p class="py-4">Deskripcija koju naknadno treba smisliti za proizvod "Perfecto fit" maramice za namestaj</p>
+    <h3 class="text-lg font-bold font-[Inter]">Perfecto Wet Wipes</h3>
+    <p class="py-4 font-[Inter]">
+      Vlažne maramice namenjene čišćenju i osvežavanju nameštaja i različitih površina. Praktično rešenje za lako održavanje čistoće i urednosti u svakom domu ili radnom prostoru.
+    </p>
     <div class="modal-action">
       <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
+        <button class="btn font-[Inter]">Zatvori</button>
       </form>
     </div>
   </div>
 </dialog>
 
-<!--Modal 3 -->
-
+<!-- Modal 3 -->
 <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
   <div class="modal-box">
-    <h3 class="text-lg font-bold">Universal</h3>
-    <p class="py-4">Deskripcija koju naknadno treba smisliti za proizvod "Universal fit"</p>
+    <h3 class="text-lg font-bold font-[Inter]">Universal Wet Wipes</h3>
+    <p class="py-4 font-[Inter]">
+      Univerzalne maramice koje omogućavaju brzo i jednostavno čišćenje raznih površina. Savršene za svakodnevnu upotrebu, pružaju osećaj higijene i svežine u svakom trenutku.
+    </p>
     <div class="modal-action">
       <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
+        <button class="btn font-[Inter]">Zatvori</button>
       </form>
     </div>
   </div>
 </dialog>
 
-
-<!--Modal 4 -->
-
+<!-- Modal 4 -->
 <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
   <div class="modal-box">
-    <h3 class="text-lg font-bold">Desinfik</h3>
-    <p class="py-4">Deskripcija koju naknadno treba smisliti za proizvod dezinfekcione maramice</p>
+    <h3 class="text-lg font-bold font-[Inter]">Desinfect Wet Wipes</h3>
+    <p class="py-4 font-[Inter]">
+      Vlažne maramice sa dezinfekcionim efektom za dodatnu sigurnost i higijenu. Idealne za čišćenje ruku i površina kada je potrebna pouzdana zaštita od bakterija i nečistoća.
+    </p>
     <div class="modal-action">
       <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
+        <button class="btn font-[Inter]">Zatvori</button>
       </form>
     </div>
   </div>
@@ -330,62 +293,40 @@
 
 
 
-<!--USLUZNA PROIZVODNJA---------------------------------------------------------------------------------------------->
-
+<!-- USLUZNA PROIZVODNJA -------------------------------------------------------------------------------------------->
 <div class="grid grid-cols-6 gap-8 py-20 px-4 bg-white">
   <div class="col-span-4 col-start-2" data-aos="fade-up">
-  
-    <!-- NASLOV SA LINIJAMA GORE -->
     <div class="flex items-center justify-center my-8">
       <div class="flex-grow h-px bg-gradient-to-l from-gray-400 via-gray-600 to-transparent"></div>
-      
-      <span class="px-4 text-4xl font-bold text-gray-800 whitespace-nowrap">Uslužna proizvodnja</span>
+      <span class="px-4 text-4xl font-bold text-gray-800 whitespace-nowrap font-[Inter]">Uslužna proizvodnja</span>
       <div class="flex-grow h-px bg-gradient-to-r from-gray-400 via-gray-600 to-transparent"></div>
-      
     </div>
-    
-    <!-- SADRŽAJ ISPOD NASLOVA -->
     <div class="flex flex-col-reverse md:flex-row items-center gap-8">
-      
-      <!-- Tekst -->
       <div class="w-full md:w-1/2">
-        <p class="text-gray-700">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, deleniti quo perferendis rem tenetur praesentium. Voluptatum, officiis enim eos animi, quod blanditiis quas nam veritatis quasi nemo placeat ut? Earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dicta in dolor error dignissimos cupiditate voluptas natus voluptatem maxime explicabo rem repellat eveniet cumque, ducimus eos non assumenda dolorem laudantium!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea voluptatum perferendis? Architecto, est. Nostrum quod, nemo sunt atque qui aut repellendus excepturi blanditiis laborum rem eos molestias ducimus ad.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, aut! Ad, laborum sed ducimus sint voluptas tempore nihil dolore vitae aut, cumque est neque distinctio eveniet ea, dignissimos sit omnis!
+        <p class="text-gray-700 font-[Inter] text-lg">
+          Specijalizovani smo za proizvodnju privatnih robnih marki vlažnih maramica, sarađujući sa vodećim trgovinskim lancima i partnerima širom zemlje i regiona. Pružamo potpunu i pouzdanu uslugu – od razvoja formule do isporuke gotovog proizvoda – uz poštovanje najviših standarda kvaliteta i fleksibilnost prilagođenu vašim potrebama.
         </p>
       </div>
-      
-      <!-- Slika -->
       <div class="w-full md:w-1/2 flex justify-center">
         <img src="assets/rukovanje.png" alt="Rukovanje" class="w-[90%] h-auto max-w-sm shadow-xl rounded-lg" />
       </div>
-      
     </div>
-    
   </div>
 </div>
 
-<!--KONTAKT --------------------------------------------------------------------------------------------------------->
-
+<!-- KONTAKT -->
 <div class="flex w-full flex-col bg-white">
-
-  <!-- NASLOV SA LINIJAMA -->
-  <div data-aos="fade-up"> 
-  <div class="flex items-center justify-center w-[70%] mx-auto my-8">
-  
-  
-    <div class="flex-grow h-px bg-gradient-to-r from-transparent via-gray-400 to-gray-600"></div>
-    <span class="px-4 text-4xl font-bold text-gray-800 whitespace-nowrap">Kontakt</span>
-    <div class="flex-grow h-px bg-gradient-to-l from-transparent via-gray-400 to-gray-600"></div>
+  <div data-aos="fade-up">
+    <div class="flex items-center justify-center w-[70%] mx-auto my-8">
+      <div class="flex-grow h-px bg-gradient-to-r from-transparent via-gray-400 to-gray-600"></div>
+      <span class="px-4 text-4xl font-bold text-gray-800 whitespace-nowrap font-[Inter]">Kontakt</span>
+      <div class="flex-grow h-px bg-gradient-to-l from-transparent via-gray-400 to-gray-600"></div>
+    </div>
   </div>
-  </div>
-  
-  <!-- SEKCIJA SA IKONAMA I TEKSTOM -->
   <section class="bg-white py-12">
     <div class="max-w-5xl mx-auto px-4">
     <div data-aos="fade-up">
-      <h2 class="text-xl text-center mb-10">
+      <h2 class="text-xl text-center mb-10 font-[Inter]">
         Za sva pitanja kontaktirajte nas putem elektronske pošte, telefona ili na našoj adresi
       </h2>
       </div>
@@ -439,69 +380,46 @@
   </section>
 </div>
 
-
-<!--FOOTER ---------------------------------------------------------------------------------------------------------->
-<footer class="bg-white text-gray-900">
-   <div class="border-t border-gray-700 mt-6"></div>
-  <!-- Top grid -->
+<!-- FOOTER -->
+<footer class="bg-white text-gray-900 font-[Inter]">
+  <div class="border-t border-gray-700 mt-6"></div>
   <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-    
-    <!-- Left: Logo + opis + društvene mreže -->
     <div class="flex flex-col items-center md:items-start text-center md:text-left">
       <img src="assets/markus-logo.png" alt="Markus CO" class="h-12 mb-4">
-      <p class="mb-4 max-w-xs">Vaš pouzdan partner u proizvodnji kvalitetnih vlažnih maramica.</p>
-      <div class="flex space-x-4">
-        <a href="#" aria-label="Facebook" class="hover:text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="fill-current"><path d="M9 8H6v4h3v12h5V12h3.642l.358-4h-4V6.333C14 5.378 14.192 5 15.115 5h2.885V0h-3.808C11.596 0 10 1.583 10 4.615V8z"/></svg>
-        </a>
-        <a href="#" aria-label="Instagram" class="hover:text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="fill-current" viewBox="0 0 24 24" width="24" height="24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.5.2.9.5 1.3 1 .4.4.8.9 1 1.3.2.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.5-.5.9-1 1.3-.4.4-.9.8-1.3 1-.4.2-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.5-.2-.9-.5-1.3-1-.4-.4-.8-.9-1-1.3-.2-.4-.3-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.5.5-.9 1-1.3.4-.4.9-.8 1.3-1 .4-.2 1-.3 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0-2.2C8.7 0 8.3 0 7 .1 5.7.1 4.7.3 4 .6c-.8.3-1.5.7-2.1 1.3-.6.6-1 .9-1.3 1.7-.3.7-.5 1.7-.6 3-.1 1.3-.1 1.7-.1 5s0 3.6.1 5c.1 1.3.3 2.3.6 3 .3.8.7 1.5 1.3 2.1.6.6 1 .9 1.7 1.3.7.3 1.7.5 3 .6 1.3.1 1.7.1 5 .1s3.6 0 5-.1c1.3-.1 2.3-.3 3-.6.8-.3 1.5-.7 2.1-1.3.6-.6 1-.9 1.3-1.7.3-.7.5-1.7.6-3 .1-1.3.1-1.7.1-5s0-3.6-.1-5c-.1-1.3-.3-2.3-.6-3-.3-.8-.7-1.5-1.3-2.1-.6-.6-1-.9-1.7-1.3-.7-.3-1.7-.5-3-.6-1.3-.1-1.7-.1-5-.1zM12 5.8c-3.4 0-6.2 2.8-6.2 6.2s2.8 6.2 6.2 6.2 6.2-2.8 6.2-6.2-2.8-6.2-6.2-6.2zm0 10.2c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm6.4-10.9c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5 1.5-.7 1.5-1.5-.7-1.5-1.5-1.5z"/></svg>
-        </a>
-        <a href="#" aria-label="LinkedIn" class="hover:text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="fill-current" width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.38-1.12 2.5-2.5 2.5S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 24h5V8H0v16zm7.5 0h5V16c0-1.1.9-2 2-2s2 .9 2 2v8h5v-9c0-3.86-3.14-7-7-7s-7 3.14-7 7v9z"/></svg>
-        </a>
-      </div>
+      <p class="mb-4 max-w-xs font-[Inter]">Vaš pouzdan partner u proizvodnji kvalitetnih vlažnih maramica, posvećen sigurnosti, kvalitetu i pristupačnosti.</p>
     </div>
-
-    <!-- Middle: Brzi linkovi -->
     <div class="text-center md:text-left">
-      <h3 class="text-lg font-bold mb-4">Brzi linkovi</h3>
+      <h3 class="text-lg font-bold mb-4 font-[Inter]">Brzi linkovi</h3>
       <ul class="space-y-2">
-        <li><a href="#" class="hover:text-white">Početna</a></li>
-        <li><a href="#" class="hover:text-white">O nama</a></li>
-        <li><a href="#" class="hover:text-white">Proizvodi</a></li>
-        <li><a href="#" class="hover:text-white">Kontakt</a></li>
+        <li><a href="#o_nama" class="hover:text-white font-[Inter]">O nama</a></li>
+        <li><a href="#Proizvodi" class="hover:text-white font-[Inter]">Proizvodi</a></li>
+        <li><a href="#" class="hover:text-white font-[Inter]">Uslužna proizvodnja</a></li>
+        <li><a href="#" class="hover:text-white font-[Inter]">Kontakt</a></li>
       </ul>
     </div>
-
-    <!-- Right: Kontakt -->
     <div class="text-center md:text-left">
-      <h3 class="text-lg font-bold mb-4">Kontaktirajte nas</h3>
+      <h3 class="text-lg font-bold mb-4 font-[Inter]">Kontaktirajte nas</h3>
       <ul class="space-y-2">
-        <li><span class="block">Karadjordjeva 123 Valjevo</span></li>
-        <li><span class="block">+381 63 222 333</span></li>
-        <li><span class="block">office@markus.rs</span></li>
+        <li><span class="block font-[Inter]">Karađorđeva 123, Valjevo</span></li>
+        <li><span class="block font-[Inter]">+381 63 222 333</span></li>
+        <li><span class="block font-[Inter]">office@markus.rs</span></li>
       </ul>
     </div>
   </div>
-
-  <!-- Bottom line -->
   <div class="border-t border-gray-700 mt-6">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center text-sm font-[Inter]">
       <p class="mb-2 md:mb-0">&copy; 2025 Markus CO. Sva prava zadržana.</p>
       <div class="flex space-x-4">
-        <a href="#" class="hover:text-white">Uslovi korišćenja</a>
-        <a href="#" class="hover:text-white">Politika privatnosti</a>
-       
+        <a href="#" class="hover:text-black font-[Inter]">Uslovi korišćenja</a>
+        <a href="#" class="hover:text-black font-[Inter]">Politika privatnosti</a>
       </div>
     </div>
   </div>
 </footer>
 
-
-
 </body>
 </html>
+
 
 
 <script>
