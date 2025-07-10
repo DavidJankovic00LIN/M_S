@@ -27,56 +27,104 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="font-[Inter]">
+<body class="overflow-x-hidden font-[Inter]">
 
-<!-- NAV -->
-<div class="bg-white shadow-sm w-full">
-  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-12 py-4">
+<!-- NAV ------------------------------------------------------------------------------------------------------------------->
+    <div class="bg-white shadow-sm w-full sticky top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-12 py-4 pl-18"
+      >
+        <!-- Levi linkovi (desktop) -->
+        <div class="hidden sm:flex items-center space-x-12">
+          <a href="#o_nama" class="text-sm font-medium">O nama</a>
+          <a  href="#Proizvodi"class="text-sm font-medium">Proizvodi</a>
+        </div>
 
-    <!-- Levi linkovi (desktop) -->
-    <div class="hidden sm:flex items-center space-x-12">
-      <a class="text-sm font-medium font-[Inter]">O nama</a>
-      <a class="text-sm font-medium font-[Inter]">Proizvodi</a>
+        <!-- Logo + strelica meni (mobilni) -->
+        <div class="flex flex-col items-center space-y-[4px]">
+          <!-- Logo -->
+          <img
+            src="assets/markus_logo.png"
+            alt="Markus Logo"
+            class="h-12 w-auto"
+          />
+
+          <!-- Dropdown bez okvira -->
+          <details class="dropdown sm:hidden relative">
+            <summary
+              class="m-0 p-0 flex items-center justify-center cursor-pointer peer"
+            >
+              <svg
+                class="w-5 h-5 transition-transform duration-200 peer-open:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </summary>
+            <ul
+              class="menu dropdown-content bg-base-100 rounded-box z-10 w-44 p-2 shadow-sm left-1/2 transform -translate-x-1/2 mt-1"
+            >
+              <li><a href="#o_nama">O nama</a></li>
+              <li><a href="#Proizvodi">Proizvodi</a></li>
+              <li><a href="#usluzna_proizvodnja">Uslužna proizvodnja</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+          </details>
+        </div>
+
+        <!-- Desni linkovi (desktop) -->
+        <div class="hidden sm:flex items-center space-x-12">
+          <a href="#usluzna_proizvodnja" class="text-sm font-medium">Uslužna proizvodnja</a>
+          <a href="#kontakt" class="text-sm font-medium">Kontakt</a>
+        </div>
+      </div>
     </div>
 
-    <!-- Logo + meni (mobilni) -->
-    <div class="flex flex-col items-center space-y-[4px]">
-      <img src="assets/markus_logo.png" alt="Markus Logo" class="h-12 w-auto" />
-
-      <details class="dropdown sm:hidden relative">
-        <summary class="m-0 p-0 flex items-center justify-center cursor-pointer peer">
-          <svg class="w-5 h-5 transition-transform duration-200 peer-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </summary>
-        <ul class="menu dropdown-content bg-base-100 rounded-box z-10 w-44 p-2 shadow-sm left-1/2 transform -translate-x-1/2 mt-1">
-          <li><a href="#" class="font-[Inter]">O nama</a></li>
-          <li><a href="#" class="font-[Inter]">Proizvodi</a></li>
-          <li><a href="#" class="font-[Inter]">Uslužna proizvodnja</a></li>
-          <li><a href="#" class="font-[Inter]">Kontakt</a></li>
-        </ul>
-      </details>
-    </div>
-
-    <!-- Desni linkovi (desktop) -->
-    <div class="hidden sm:flex items-center space-x-12">
-      <a class="text-sm font-medium font-[Inter]">Uslužna proizvodnja</a>
-      <a class="text-sm font-medium font-[Inter]">Kontakt</a>
-    </div>
-  </div>
-</div>
 
 <!-- HERO ----------------------------------------------------------------------------------------------------->
-<div class="hero min-h-screen" style="background-image: url(M_S_slike_nove/Egipat\ 2012\ BABY\ FIT\ photo.jpg);">
-  <div class="hero-overlay"></div>
-  <div class="hero-content text-neutral-content text-center">
-    <div class="max-w-md">
-      <h1 class="mb-5 text-5xl font-bold font-[Inter]">Vaša svakodnevna nega. Naša posvećenost.</h1>
-      <p class="mb-5 font-[Inter]">Kvalitetne vlažne maramice i proizvodi osmišljeni da pruže sigurnost, nežnost i praktičnost za celu porodicu.</p>
-      <button class="btn font-[Inter]" style="background-color: #d2b277;">Saznajte više</button>
+    <div id="hero" class="relative hero min-h-screen w-full overflow-hidden">
+      <!-- Wrapper za pozadine -->
+      <div
+        id="hero-bg-wrapper"
+        class="absolute inset-0 w-full h-full overflow-hidden z-[-1]"
+      >
+        <div
+          class="hero-slide absolute inset-0 w-full h-full bg-cover bg-center transition-all duration-1000 opacity-100 translate-x-0 z-10"
+          style="
+            background-image: url('M_S_slike_nove/Egipat 2012 BABY FIT photo.jpg');
+          "
+        ></div>
+        <div
+          class="hero-slide absolute inset-0 w-full h-full bg-cover bg-center transition-all duration-1000 opacity-0 translate-x-full z-0"
+        ></div>
+      </div>
+
+      <!-- Sadržaj koji uvek ostaje vidljiv -->
+      <div
+        class="relative z-20 flex flex-col items-center justify-center text-center h-full px-4"
+      >
+        <div class="max-w-md bg-[#d8c28c] rounded-2xl p-6 shadow-lg">
+          <h1 class="mb-5 text-5xl font-bold text-white">
+            Slogan ili logo ovde
+          </h1>
+          <p class="mb-5 text-white">
+            Mozda ovde neki slogan, zavisi sta oslucimo gore
+          </p>
+          <a href="#o_nama">
+          <button class="btn bg-[#778fd2] text-white" >
+            Dugme koje ce da skroluje na sekciju ispod
+          </button></a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+
 
 <!-- O NAMA ---------------------------------------------------------------------------------------------------->
 <div id="o_nama">
@@ -100,7 +148,7 @@
 <!-- SERTIFIKACIJA--------------------------------------------------------------------------------------------------->
 
 
-<!-- SERTIFIKACIJA -->
+
 <div class="bg-white py-20 px-4">
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
     
@@ -296,6 +344,7 @@
 
 
 <!-- USLUZNA PROIZVODNJA -------------------------------------------------------------------------------------------->
+<div id="usluzna_proizvodnja">
 <div class="grid grid-cols-6 gap-8 py-20 px-4 bg-white">
   <div class="col-span-4 col-start-2" data-aos="fade-up">
     <div class="flex items-center justify-center my-8">
@@ -315,8 +364,10 @@
     </div>
   </div>
 </div>
+</div>
 
-<!-- KONTAKT -->
+<!-- KONTAKT ---------------------------------------------------------------------------------------------->
+<div id="kontakt">
 <div class="flex w-full flex-col bg-white">
   <div data-aos="fade-up">
     <div class="flex items-center justify-center w-[70%] mx-auto my-8">
@@ -381,8 +432,9 @@
     </div>
   </section>
 </div>
+</div>
 
-<!-- FOOTER -->
+<!-- FOOTER ------------------------------------------------------------------------------------------------------------------>
 <footer class="bg-white text-gray-900 font-[Inter]">
   <div class="border-t border-gray-700 mt-6"></div>
   <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -425,16 +477,142 @@
 
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
-    
+  document.addEventListener("DOMContentLoaded", function () {
+    // Inicijalizacija menija i AOS (ako koristiš)
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
     if (menuToggle && mobileMenu) {
-      menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
       });
     }
 
-    AOS.init();
+    if (window.AOS) AOS.init();
+
+    // Animacija hero slika
+    const images = [
+      "M_S_slike_nove/Egipat 2012 BABY FIT photo.jpg",
+      "M_S_slike_nove/pexels-goda-morgan-121487563-18649629.jpg",
+      "M_S_slike_nove/pexels-goda-morgan-121487563-9896886.jpg",
+      "M_S_slike_nove/baby-6823431_1280.jpg",
+    ];
+
+    const slides = document.querySelectorAll(".hero-slide");
+    let current = 0;
+
+    setInterval(() => {
+      const currentSlide = slides[0];
+      const nextSlide = slides[1];
+
+      // Postavi sledeću sliku
+      current = (current + 1) % images.length;
+      nextSlide.style.backgroundImage = `url('${images[current]}')`;
+
+      // Animiraj - trenutna slika izlazi levo, nova ulazi s desna
+      currentSlide.classList.remove("opacity-100", "translate-x-0");
+      currentSlide.classList.add("opacity-0", "-translate-x-full");
+
+      nextSlide.classList.remove("opacity-0", "translate-x-full");
+      nextSlide.classList.add("opacity-100", "translate-x-0");
+
+      // Zameni div-ove nakon animacije
+      setTimeout(() => {
+        currentSlide.classList.remove("-translate-x-full");
+        currentSlide.classList.remove("z-10");
+        currentSlide.classList.add("z-0");
+
+        nextSlide.classList.remove("z-0");
+        nextSlide.classList.add("z-10");
+
+        // Premesti trenutnu sliku na kraj wrappera
+        const wrapper = document.getElementById("hero-bg-wrapper");
+        wrapper.appendChild(currentSlide);
+      }, 1000);
+    }, 4000);
+
+    // Baby Fit slajder
+    const babyFitImages = [
+      "assets/baby_fit1.png",
+      "assets/baby_fit2.png",
+      "assets/baby_fit3.png",
+    ];
+
+    const babyFitImg = document.getElementById("babyFitImage");
+    let babyFitIndex = 0;
+
+    if (babyFitImg) {
+      setInterval(() => {
+        // Fade out
+        babyFitImg.classList.remove("opacity-100");
+        babyFitImg.classList.add("opacity-0");
+
+        setTimeout(() => {
+          // Promena slike nakon što nestane
+          babyFitIndex = (babyFitIndex + 1) % babyFitImages.length;
+          babyFitImg.src = babyFitImages[babyFitIndex];
+
+          // Fade in
+          babyFitImg.classList.remove("opacity-0");
+          babyFitImg.classList.add("opacity-100");
+        }, 1000); // trajanje fade-out pre zamene slike
+      }, 4000); // svake 4 sekunde
+    }
+
+    // Perfecto slajder
+    const perfectoImages = [
+      "assets/Perfecto univerzal.jpg",
+      "assets/Perfecto drvo crvena 1.jpg",
+    ];
+
+    const perfectoImg = document.getElementById("perfectoImage");
+    let perfectoIndex = 0;
+
+    if (perfectoImg) {
+      setInterval(() => {
+        perfectoImg.classList.remove("opacity-100");
+        perfectoImg.classList.add("opacity-0");
+
+        setTimeout(() => {
+          perfectoIndex = (perfectoIndex + 1) % perfectoImages.length;
+          perfectoImg.src = perfectoImages[perfectoIndex];
+
+          perfectoImg.classList.remove("opacity-0");
+          perfectoImg.classList.add("opacity-100");
+        }, 1000);
+      }, 4000);
+    }
+
+    // Universal slajder
+    const universalImages = [
+      "assets/Universal fit classic 100pcs.jpg",
+      "assets/Family fit classic 80pcs.jpg",
+    ];
+
+    const universalImg = document.getElementById("universalImage");
+    let universalIndex = 0;
+
+    if (universalImg) {
+      setInterval(() => {
+        universalImg.classList.remove("opacity-100");
+        universalImg.classList.add("opacity-0");
+
+        setTimeout(() => {
+          universalIndex = (universalIndex + 1) % universalImages.length;
+          universalImg.src = universalImages[universalIndex];
+
+          universalImg.classList.remove("opacity-0");
+          universalImg.classList.add("opacity-100");
+        }, 1000);
+      }, 4000);
+    }
+  });
+
+   document.addEventListener("click", function(event) {
+    const dropdown = document.querySelector("details.dropdown");
+    if (!dropdown) return;
+    if (!dropdown.contains(event.target)) {
+      dropdown.removeAttribute("open");
+    }
   });
 </script>
