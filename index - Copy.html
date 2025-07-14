@@ -26,66 +26,78 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <!--My style-->
+  <style>
+    .body{
+      overflow: hidden;
+    }
+    .navbar{
+      position: sticky;
+    }
+  </style>
+
+
 </head>
 <body class="overflow-x-hidden font-[Inter]">
 
 <!-- NAV ------------------------------------------------------------------------------------------------------------------->
-    <div class="bg-white shadow-sm w-full sticky top-0 z-50">
-      <div
-        class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-12 py-4 pl-18"
-      >
-        <!-- Levi linkovi (desktop) -->
-        <div class="hidden sm:flex items-center space-x-12">
-          <a href="#o_nama" class="text-sm font-medium">O nama</a>
-          <a  href="#Proizvodi"class="text-sm font-medium">Proizvodi</a>
-        </div>
-
-        <!-- Logo + strelica meni (mobilni) -->
-        <div class="flex flex-col items-center space-y-[4px]">
-          <!-- Logo -->
-          <img
-            src="assets/markus_logo.png"
-            alt="Markus Logo"
-            class="h-12 w-auto"
-          />
-
-          <!-- Dropdown bez okvira -->
-          <details class="dropdown sm:hidden relative">
-            <summary
-              class="m-0 p-0 flex items-center justify-center cursor-pointer peer"
-            >
-              <svg
-                class="w-5 h-5 transition-transform duration-200 peer-open:rotate-180"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </summary>
-            <ul
-              class="menu dropdown-content bg-base-100 rounded-box z-10 w-44 p-2 shadow-sm left-1/2 transform -translate-x-1/2 mt-1"
-            >
-              <li><a href="#o_nama">O nama</a></li>
-              <li><a href="#Proizvodi">Proizvodi</a></li>
-              <li><a href="#usluzna_proizvodnja">Uslužna proizvodnja</a></li>
-              <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-          </details>
-        </div>
-
-        <!-- Desni linkovi (desktop) -->
-        <div class="hidden sm:flex items-center space-x-12">
-          <a href="#usluzna_proizvodnja" class="text-sm font-medium">Uslužna proizvodnja</a>
-          <a href="#kontakt" class="text-sm font-medium">Kontakt</a>
-        </div>
-      </div>
+   <div class="bg-white shadow-sm w-full sticky top-0 z-50">
+  <div
+    class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-12 py-4 px-4 sm:px-0 sm:pl-18"
+  >
+    <!-- Levi linkovi (desktop) -->
+    <div class="hidden sm:flex items-center space-x-12">
+      <a href="#o_nama" class="text-sm font-medium">O nama</a>
+      <a href="#Proizvodi" class="text-sm font-medium">Proizvodi</a>
     </div>
+
+    <!-- Logo + strelica meni (mobilni) -->
+    <div class="flex flex-col items-center space-y-[4px]">
+      <!-- Logo -->
+      <img
+        src="assets/markus_logo.png"
+        alt="Markus Logo"
+        class="h-12 w-auto"
+      />
+
+      <!-- Dropdown bez okvira -->
+      <details class="dropdown sm:hidden relative">
+        <summary
+          class="m-0 p-0 flex items-center justify-center cursor-pointer peer"
+        >
+          <svg
+            class="w-5 h-5 transition-transform duration-200 peer-open:rotate-180"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </summary>
+        <ul
+          class="menu dropdown-content bg-base-100 rounded-box z-10 w-44 p-2 shadow-sm left-1/2 transform -translate-x-1/2 mt-1"
+        >
+          <li><a href="#o_nama">O nama</a></li>
+          <li><a href="#Proizvodi">Proizvodi</a></li>
+          <li><a href="#usluzna_proizvodnja">Uslužna proizvodnja</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </details>
+    </div>
+
+    <!-- Desni linkovi (desktop) -->
+    <div class="hidden sm:flex items-center space-x-12">
+      <a href="#usluzna_proizvodnja" class="text-sm font-medium">Uslužna proizvodnja</a>
+      <a href="#kontakt" class="text-sm font-medium">Kontakt</a>
+    </div>
+  </div>
+</div>
 
 
 <!-- HERO ----------------------------------------------------------------------------------------------------->
