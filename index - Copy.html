@@ -29,13 +29,10 @@
 
   <!--My style-->
   <style>
-    
-   html, body {
-  overflow-x: hidden;
-}
-    .navbar{
-      position: fixed;
+    html, body{
+      overflow-x: hidden;
     }
+    
   </style>
 
 
@@ -460,8 +457,8 @@
       <ul class="space-y-2">
         <li><a href="#o_nama" class="hover:text-white font-[Inter]">O nama</a></li>
         <li><a href="#Proizvodi" class="hover:text-white font-[Inter]">Proizvodi</a></li>
-        <li><a href="#" class="hover:text-white font-[Inter]">Uslužna proizvodnja</a></li>
-        <li><a href="#" class="hover:text-white font-[Inter]">Kontakt</a></li>
+        <li><a href="#usluzna_proizvodnja" class="hover:text-white font-[Inter]">Uslužna proizvodnja</a></li>
+        <li><a href="#kontakt" class="hover:text-white font-[Inter]">Kontakt</a></li>
       </ul>
     </div>
     <div class="text-center md:text-left">
@@ -477,8 +474,8 @@
     <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center text-sm font-[Inter]">
       <p class="mb-2 md:mb-0">&copy; 2025 Markus CO. Sva prava zadržana.</p>
       <div class="flex space-x-4">
-        <a href="#" class="hover:text-black font-[Inter]">Uslovi korišćenja</a>
-        <a href="#" class="hover:text-black font-[Inter]">Politika privatnosti</a>
+        <a href="uslovi_koriscenja.html" class="hover:text-black font-[Inter]">Uslovi korišćenja</a>
+        <a href="politika_privatnosti.html" class="hover:text-black font-[Inter]">Politika privatnosti</a>
       </div>
     </div>
   </div>
@@ -520,7 +517,7 @@
 
       // Postavi sledeću sliku
       current = (current + 1) % images.length;
-      nextSlide.style.backgroundImage = url('${images[current]}');
+      nextSlide.style.backgroundImage = `url('${images[current]}')`;
 
       // Animiraj - trenutna slika izlazi levo, nova ulazi s desna
       currentSlide.classList.remove("opacity-100", "translate-x-0");
