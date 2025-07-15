@@ -29,11 +29,12 @@
 
   <!--My style-->
   <style>
-    .body{
-      overflow: hidden;
-    }
+    
+   html, body {
+  overflow-x: hidden;
+}
     .navbar{
-      position: sticky;
+      position: fixed;
     }
   </style>
 
@@ -293,7 +294,7 @@
 
 <!--Modali -->
 <!-- Modal 1 -->
-<dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
+<dialog id="my_modal_1" class="modal modal-middle">
   <div class="modal-box">
     <h3 class="text-lg font-bold font-[Inter]">Baby Fit Wet Wipes</h3>
     <p class="py-4 font-[Inter]">
@@ -308,7 +309,7 @@
 </dialog>
 
 <!-- Modal 2 -->
-<dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+<dialog id="my_modal_2" class="modal modal-middle">
   <div class="modal-box">
     <h3 class="text-lg font-bold font-[Inter]">Perfecto Wet Wipes</h3>
     <p class="py-4 font-[Inter]">
@@ -323,7 +324,7 @@
 </dialog>
 
 <!-- Modal 3 -->
-<dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
+<dialog id="my_modal_3" class="modal modal-middle">
   <div class="modal-box">
     <h3 class="text-lg font-bold font-[Inter]">Universal Wet Wipes</h3>
     <p class="py-4 font-[Inter]">
@@ -338,7 +339,7 @@
 </dialog>
 
 <!-- Modal 4 -->
-<dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
+<dialog id="my_modal_4" class="modal modal-middle">
   <div class="modal-box">
     <h3 class="text-lg font-bold font-[Inter]">Desinfect Wet Wipes</h3>
     <p class="py-4 font-[Inter]">
@@ -519,7 +520,7 @@
 
       // Postavi sledeću sliku
       current = (current + 1) % images.length;
-      nextSlide.style.backgroundImage = `url('${images[current]}')`;
+      nextSlide.style.backgroundImage = url('${images[current]}');
 
       // Animiraj - trenutna slika izlazi levo, nova ulazi s desna
       currentSlide.classList.remove("opacity-100", "translate-x-0");
